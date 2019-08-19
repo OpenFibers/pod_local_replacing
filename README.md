@@ -13,15 +13,15 @@ cd -
 Output: 
 
 ```
-Working... and not hard... actually very easy 🙄
-Replaced to local ref: foo
-diff --git a/DemoMainProject/Podfile b/DemoMainProject/Podfile
-index 78b9e7d..d4ed90f 100644
---- a/DemoMainProject/Podfile
-+++ b/DemoMainProject/Podfile
-@@ -1 +1 @@
--pod 'FooSDK' :git=>'git@gitlab.mydomain.com:group/repo_name.git', :branch =>'develop'
-+pod 'FooSDK' :path=>'DemoFooSDK'
+➜  Working... and not hard... actually very easy 🙄
+➜  Replaced to local ref: DemoFooSDK
+➜  diff --git a/DemoMainProject/Podfile b/DemoMainProject/Podfile
+➜  index 78b9e7d..d4ed90f 100644
+➜  --- a/DemoMainProject/Podfile
+➜  +++ b/DemoMainProject/Podfile
+➜  @@ -1 +1 @@
+➜  -pod 'DemoFooSDK', :git => 'git@gitlab.mydomain.com:FooGroup/DemoFooSDK.git',:branch => 'develop'
+➜  +pod 'DemoFooSDK' :path=>'../DemoFooSDK'
 ```
 
 ### Dependency

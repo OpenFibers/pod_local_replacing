@@ -1,2 +1,2 @@
-pod 'DemoFooSDK' :path=>'../DemoFooSDK'
-pod 'DemoBarSDK' :path=>'../DemoBarSDK'
+pod 'DemoFooSDK', :git => 'git@gitlab.mydomain.com:FooGroup/DemoFooSDK.git',:branch => 'develop'
+pod 'DemoBarSDK', '1.0.1'

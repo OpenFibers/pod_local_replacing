@@ -23,7 +23,7 @@ def path_from_abstract_name(abstract_name: str):
 
 
 def generate_local_ref_str(actual_name: str, path: str):
-    ref_str = 'pod \'' + actual_name + '\' :path=>\'../' + path + '\''
+    ref_str = 'pod \'' + actual_name + '\', :path=>\'../' + path + '\''
     return ref_str
 
 

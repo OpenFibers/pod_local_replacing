@@ -41,11 +41,11 @@ def replace_string_in_podfile(abstract_name: str) -> None:
             local_ref_str = generate_local_ref_str(actual_name=actual_name, path=local_path_str)
             components[index] = local_ref_str
             replacing_action_occurred = True
+            print('Replaced to local ref: ' + actual_name)
     if replacing_action_occurred:
         content = '\n'.join(components)
         with open('Podfile', 'w') as f:
             f.write(content)
-            print('Replaced to local ref: ' + abstract_name)
 
 
 if __name__ == '__main__':

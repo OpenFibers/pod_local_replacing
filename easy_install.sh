@@ -10,6 +10,7 @@ if grep -q "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.zshrc; then
 else
   echo "" >> ~/.zshrc
   echo "alias plr='python3 ~/.pod_local_replacing/plr.py'" >> ~/.zshrc
+  echo "alias plr_update='bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)'" >> ~/.zshrc
 fi
 
 if grep -q "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.bash_profile; then
@@ -17,4 +18,5 @@ if grep -q "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.bash_profile; 
 else
   echo "" >> ~/.bash_profile
   echo "alias plr='python3 ~/.pod_local_replacing/plr.py'" >> ~/.bash_profile
+  echo "alias plr_update='bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)'" >> ~/.bash_profile
 fi

@@ -47,7 +47,7 @@ def replace_string_in_podfile(abstract_name: str) -> None:
         with open('Podfile', 'w') as f:
             f.write(content)
     else:
-        print('Did not find any ref matching ' + abstract_name)
+        print('Did not find any ref matching ' + abstract_name + ' in Podfile')
 
 
 if __name__ == '__main__':

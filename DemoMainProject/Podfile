@@ -1,0 +1,1 @@
+pod 'FooSDK' :git=>'git@gitlab.mydomain.com:group/repo_name.git', :branch =>'develop'

@@ -32,9 +32,16 @@ strongly recommend [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ### Install
 
+Just execute in terminal:  
 
+```bash
+bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)
 ```
-sudo bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)
+
+If cannot save .bash_profile, manually update after install:  
+
+```bash
+sudo ~/.pod_local_replacing/easy_install.sh
 ```
 
 ### How to use

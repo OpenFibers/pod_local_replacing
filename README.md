@@ -44,7 +44,7 @@ If cannot save .bash_profile, manually update after install:
 sudo ~/.pod_local_replacing/easy_install.sh
 ```
 
-### How to use
+### How to use plr (pod local replacing)
 
 Make sure your main project folder and sdk folders are at a same path:
 
@@ -95,6 +95,27 @@ plr sdk
 ➜  Replaced to local ref: DemoFooSDK
 ➜  Replaced to local ref: DemoBarSDK
 ```
+
+### How to use sac (search in all commits)
+
+Searching keyword 'ABC' in all commits, and codes are few, just run:  
+
+```
+sac ABC
+```
+
+If there are mega codes, sac will be slow. So save sac result to a file:  
+
+```
+sac ABC > ABC_key_search.log
+```
+
+And tail in another terminal:  
+
+```
+tail -10000f ABC_key_search.log
+```
+
 
 ### Update plr
 

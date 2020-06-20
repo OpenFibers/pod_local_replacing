@@ -116,6 +116,15 @@ And tail in another terminal:
 tail -10000f ABC_key_search.log
 ```
 
+The lastest results will be on top, and the oldest results will be on bottom. Results are like:  
+
+```
+commit_number_of_today:file_path:XXXXABCXXXX
+commit_number_of_yestoday:file_path:XXXXABCXXXX
+...
+commit_number_of_jesus_birthday:file_path:XXXXABCXXXX
+```  
+
 
 ### Update plr
 

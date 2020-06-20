@@ -23,7 +23,14 @@ add_alias_for_file(){
   fi
 }
 
-add_alias_for_file "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.zshrc
+# plr_update
 add_alias_for_file "alias plr_update='bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)'" ~/.zshrc
-add_alias_for_file "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.bash_profile
 add_alias_for_file "alias plr_update='bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)'" ~/.bash_profile
+
+# plr
+add_alias_for_file "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.zshrc
+add_alias_for_file "alias plr='python3 ~/.pod_local_replacing/plr.py'" ~/.bash_profile
+
+# sac
+add_alias_for_file "alias sac='python3 ~/.pod_local_replacing/sac.py'" ~/.zshrc
+add_alias_for_file "alias sac='python3 ~/.pod_local_replacing/sac.py'" ~/.bash_profile

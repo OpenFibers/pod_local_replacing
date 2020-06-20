@@ -53,4 +53,4 @@ def replace_string_in_podfile(abstract_name: str) -> None:
 if __name__ == '__main__':
     print('Working... and not hard... actually very easy 🙄')
     for arg in sys.argv[1:]:
-        replace_string_in_podfile(abstract_name=arg)
+        replace_string_in_podfile(abstract_name=arg.lower())

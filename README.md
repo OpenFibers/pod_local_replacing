@@ -34,7 +34,7 @@ strongly recommend [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)
+sudo bash <(curl -s https://raw.githubusercontent.com/OpenFibers/pod_local_replacing/master/easy_install.sh)
 ```
 
 ### How to use

@@ -16,6 +16,7 @@ def check_keyword(keyword: str) -> None:
 
 
 if __name__ == '__main__':
-    print('Working... very hard... 🙄')
     for arg in sys.argv[1:]:
+        print('Working... very hard... for searching all codes for key 🙄:')
+        print(arg)
         check_keyword(keyword=arg)

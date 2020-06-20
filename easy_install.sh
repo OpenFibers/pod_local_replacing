@@ -1,10 +1,12 @@
 #!/bin/sh
 
 if [ ! -x ~/.pod_local_replacing ]; then
+  echo "clone plr into local repo..."
   git clone https://github.com/OpenFibers/pod_local_replacing.git pod_local_replacing
   mv pod_local_replacing .pod_local_replacing
 fi
 
+echo "update plr local repo..."
 cd ~/.pod_local_replacing || exit
 git pull
 cd - || exit

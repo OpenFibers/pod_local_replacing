@@ -11,7 +11,7 @@ def check_keyword(keyword: str) -> None:
     all_commits_list: [str] = all_commit_string.split('\n')
     for commit_str in all_commits_list:
         if len(commit_str) != 0:
-            subprocess.run(["git", "grep", keyword, commit_str])
+            subprocess.run(["git", "--no-pager", "grep", keyword, commit_str])
     return
 
 

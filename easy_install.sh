@@ -1,10 +1,13 @@
 #!/bin/sh
-#cd ~
-#rm -rf '.pod_local_replacing'
-#git clone https://github.com/OpenFibers/pod_local_replacing.git pod_local_replacing
-#mv pod_local_replacing .pod_local_replacing
-#cd -
 
+if [ ! -x ~/.pod_local_replacing ]; then
+  git clone https://github.com/OpenFibers/pod_local_replacing.git pod_local_replacing
+  mv pod_local_replacing .pod_local_replacing
+fi
+
+cd ~/.pod_local_replacing || exit
+git pull
+cd - || exit
 
 add_alias_for_file(){
   adding_alias=$1

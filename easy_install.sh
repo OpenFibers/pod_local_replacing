@@ -14,10 +14,8 @@ cd - || exit
 add_alias_for_file(){
   adding_alias=$1
   file_path=$2
-  echo "adding $adding_alias to $file_path"
-
   if grep -q "$adding_alias" "$file_path"; then
-    echo "$file_path $adding_alias exist'"
+    echo "checking $file_path done"
   else
     echo "" >> "$file_path"
     echo "$adding_alias" >> "$file_path"
